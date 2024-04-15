@@ -22,3 +22,15 @@ export const onUpdateNote = /* GraphQL */ `
     }
   }
 `;
+export const onDeleteNote = /* GraphQL */ `
+  subscription OnDeleteNote {
+    onDeleteNote {
+      id
+      name
+      description
+      image
+      createdAt
+      updatedAt
+    }
+  }
+`;
