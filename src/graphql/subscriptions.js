@@ -10,3 +10,15 @@ export const onCreateNote = /* GraphQL */ `
     }
   }
 `;
+export const onUpdateNote = /* GraphQL */ `
+  subscription OnUpdateNote {
+    onUpdateNote {
+      id
+      name
+      description
+      image
+      createdAt
+      updatedAt
+    }
+  }
+`;
