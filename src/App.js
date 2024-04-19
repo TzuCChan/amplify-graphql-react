@@ -18,4 +18,8 @@ import {
   deleteNote as deleteNoteMutation,
 } from "./graphql/mutations";
 
+const App = ({ signOut }) => {
+  const [notes, setNotes] = useState([]);
+}
+
 export default withAuthenticator(App);
