@@ -20,6 +20,13 @@ import {
 
 const App = ({ signOut }) => {
   const [notes, setNotes] = useState([]);
+
+  useEffect(() => {
+    fetchNotes();
+  }, []);
+
+  async function fetchNotes() {
+  }
 }
 
 export default withAuthenticator(App);
